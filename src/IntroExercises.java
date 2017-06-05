@@ -1,9 +1,10 @@
+import java.util.ArrayList;
 
 public class IntroExercises {
 
     public static void main(String args[]) {
         IntroExercises exercises = new IntroExercises();
-        exercises.runDemo(4);
+        exercises.runDemo(8);
     }
 
     public void runDemo(int n) {
@@ -11,6 +12,8 @@ public class IntroExercises {
         TriangleExerciser exercise1 = new TriangleExerciser();
         DiamondExerciser exercise2 = new DiamondExerciser();
         FizzBuzzExerciser exercise3 = new FizzBuzzExerciser();
+        PrimeFactorsExerciser exercise4 = new PrimeFactorsExerciser();
+        ArrayList<Integer> primeFactors;
 
         System.out.println("Easiest exercise ever");
         exercise1.drawAsterisk();
@@ -30,5 +33,9 @@ public class IntroExercises {
 
         System.out.println("FizzBuzz Exercise");
         exercise3.FizzBuzz();
+
+        System.out.println("Prime Factors Exercise");
+        primeFactors = exercise4.generate(30);
+        System.out.println(primeFactors);
     }
 }
