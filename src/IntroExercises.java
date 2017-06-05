@@ -10,6 +10,7 @@ public class IntroExercises {
 
         TriangleExerciser exercise1 = new TriangleExerciser();
         DiamondExerciser exercise2 = new DiamondExerciser();
+        FizzBuzzExerciser exercise3 = new FizzBuzzExerciser();
 
         System.out.println("Easiest exercise ever");
         exercise1.drawAsterisk();
@@ -26,5 +27,8 @@ public class IntroExercises {
         exercise2.drawDiamond(n);
         System.out.println("Diamond with Name");
         exercise2.drawNameDiamond(n, "Jared");
+
+        System.out.println("FizzBuzz Exercise");
+        exercise3.FizzBuzz();
     }
 }
